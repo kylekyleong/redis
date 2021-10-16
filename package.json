@@ -1,0 +1,22 @@
+{
+  "name": "redis",
+  "version": "1.0.0",
+  "description": "``` SET <var> <value> GET <var> DELETE <var> EXISTS <var> KEYS *FLUSHALL ``` ``` TTL <var> EXPIRE <var> <int> SETEX <var> <int> <value> ``` ``` LPUSH <list> <value> LRANGE <list> 0 -1 RPUSH <list> <value> LPOP <list> <value> RPOP <list> <value> ``` ``` SADD <set> <value> SMEMBERS <set> SREM <set> <value> ``` ``` HSET <hash> <key> <pair> HGET <hash> <key> HGETALL <hash> HDEL <hash> <key> <pair> HEXISTS <hash> <key> ```",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
